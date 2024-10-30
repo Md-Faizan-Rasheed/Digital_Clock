@@ -1,0 +1,37 @@
+.container{
+    background-color: rgb(34, 34, 34);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  width: full;
+  height:100vh;
+}
+.show{
+    color: azure;
+}
+.clock{
+    width: 350px;
+    height: 80px;
+    padding: 12px;
+    border: 1px solid rgb(71, 71, 71);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     color:rgb(238, 218, 218);
+     font-size:70px;
+     font-weight: 600;
+     flex-direction: row;
+     gap:6px;
+     background-color:rgb(45, 41, 41) ;
+     box-shadow: 12px 5px 300px 140px rgba(225, 3, 3, 0.5);
+    }
+    .digital-clock {
+        background: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="4" height="4" viewBox="0 0 4 4"%3E%3Ccircle cx="2" cy="2" r="1" fill="lime" /%3E%3C/svg%3E') repeat;
+        /* -webkit-background-clip: text; */
+
+        font-family: 'Orbitron', sans-serif;
+        font-family: 'Dot Matrix', sans-serif;
+
+        /* text-decoration: underline;
+            text-decoration-style: dotted; */
+    }

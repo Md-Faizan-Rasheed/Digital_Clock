@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dot+Matrix&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <div class="show"></div>
+        <div class="clock digital-clock">
+        
+        </div>
+    </div>
+    <script>
+        // let clock = document.querySelector(".clock");
+        // clock.textContent=
+        function updateClock() {
+    let time = new Date();
+    let clock = document.querySelector(".clock");
+
+    let hour = time.getHours()-12;
+    let min  = time.getMinutes();
+    let second = time.getSeconds();
+    
+    let show = document.querySelector(".show");
+    
+    // Format the time string to display
+    let formattedTime = `${hour} : ${min} : ${second < 10 ? '0' + second : second}`;
+    clock.textContent = formattedTime;
+}
+
+// Initial call to display the time immediately when the page loads
+updateClock();
+
+// Update the time every second
+setInterval(updateClock, 1000);
+
+    </script>
+</body>
+</html>
